@@ -1,0 +1,15 @@
+X:\ExpenseTracker\VideoCodes\StudentManagementSystem\bin\Debug\net11.0\StudentManagementSystem.exe
+X:\ExpenseTracker\VideoCodes\StudentManagementSystem\bin\Debug\net11.0\StudentManagementSystem.deps.json
+X:\ExpenseTracker\VideoCodes\StudentManagementSystem\bin\Debug\net11.0\StudentManagementSystem.runtimeconfig.json
+X:\ExpenseTracker\VideoCodes\StudentManagementSystem\bin\Debug\net11.0\StudentManagementSystem.dll
+X:\ExpenseTracker\VideoCodes\StudentManagementSystem\bin\Debug\net11.0\StudentManagementSystem.pdb
+X:\ExpenseTracker\VideoCodes\StudentManagementSystem\obj\Debug\net11.0\StudentManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+X:\ExpenseTracker\VideoCodes\StudentManagementSystem\obj\Debug\net11.0\StudentManagementSystem.AssemblyInfoInputs.cache
+X:\ExpenseTracker\VideoCodes\StudentManagementSystem\obj\Debug\net11.0\StudentManagementSystem.AssemblyInfo.cs
+X:\ExpenseTracker\VideoCodes\StudentManagementSystem\obj\Debug\net11.0\StudentManagementSystem.csproj.CoreCompileInputs.cache
+X:\ExpenseTracker\VideoCodes\StudentManagementSystem\obj\Debug\net11.0\StudentManagementSystem.sourcelink.json
+X:\ExpenseTracker\VideoCodes\StudentManagementSystem\obj\Debug\net11.0\StudentManagementSystem.dll
+X:\ExpenseTracker\VideoCodes\StudentManagementSystem\obj\Debug\net11.0\refint\StudentManagementSystem.dll
+X:\ExpenseTracker\VideoCodes\StudentManagementSystem\obj\Debug\net11.0\StudentManagementSystem.pdb
+X:\ExpenseTracker\VideoCodes\StudentManagementSystem\obj\Debug\net11.0\StudentManagementSystem.genruntimeconfig.cache
+X:\ExpenseTracker\VideoCodes\StudentManagementSystem\obj\Debug\net11.0\ref\StudentManagementSystem.dll

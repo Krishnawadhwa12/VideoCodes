@@ -144,3 +144,114 @@ class Program
 // Name: Krishna
 // Age: 19
  
+
+ using System;
+
+abstract class Animal
+{
+    public abstract void Speak();
+
+    public void Eat()
+    {
+        Console.WriteLine("Animal is Eating");
+    }
+}
+
+class Dog : Animal
+{
+    public string Name;
+
+    public Dog(string name)
+    {
+        Name = name;
+    }
+
+    public override void Speak()
+    {
+        Console.WriteLine(Name + " is Barking");
+    }
+}
+
+sealed class Logger
+{
+    public void Log(string message)
+    {
+        Console.WriteLine("LOG : " + message);
+    }
+}
+
+class Student
+{
+    public string Name;
+    private int age;
+
+    public Student(string name, int age)
+    {
+        Name = name;
+        this.age = age;
+    }
+
+    public void Display()
+    {
+        Console.WriteLine("Student Name : " + Name);
+        Console.WriteLine("Age : " + age);
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("===== CLASS AND OBJECT =====");
+
+        Student s1 = new Student("Krishna", 19);
+
+        s1.Display();
+
+        Console.WriteLine("\n===== INHERITANCE =====");
+
+        Dog d1 = new Dog("Tommy");
+
+        d1.Speak();
+        d1.Eat();
+
+        Console.WriteLine("\n===== POLYMORPHISM =====");
+
+        Animal a1 = new Dog("Rocky");
+
+        a1.Speak();
+        a1.Eat();
+
+        Console.WriteLine("\n===== SEALED CLASS =====");
+
+        Logger logger = new Logger();
+
+        logger.Log("Application Started");
+
+        Console.WriteLine("\nProgram Finished");
+    }
+}
+
+//                                    output
+
+
+// ===== CLASS AND OBJECT =====
+
+// Student Name : Krishna
+// Age : 19
+
+// ===== INHERITANCE =====
+
+// Tommy is Barking
+// Animal is Eating
+
+// ===== POLYMORPHISM =====
+
+// Rocky is Barking
+// Animal is Eating
+
+// ===== SEALED CLASS =====
+
+// LOG : Application Started
+
+// Program Finished

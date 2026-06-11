@@ -1,0 +1,122 @@
+[1mdiff --git a/Program.cs b/Program.cs[m
+[1mindex c90c771..9ec895c 100644[m
+[1m--- a/Program.cs[m
+[1m+++ b/Program.cs[m
+[36m@@ -143,4 +143,115 @@[m [mclass Program[m
+ // Class and Object:[m
+ // Name: Krishna[m
+ // Age: 19[m
+[31m- [m
+\ No newline at end of file[m
+[32m+[m[41m [m
+[32m+[m
+[32m+[m[32m using System;[m
+[32m+[m
+[32m+[m[32mabstract class Animal[m
+[32m+[m[32m{[m
+[32m+[m[32m    public abstract void Speak();[m
+[32m+[m
+[32m+[m[32m    public void Eat()[m
+[32m+[m[32m    {[m
+[32m+[m[32m        Console.WriteLine("Animal is Eating");[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mclass Dog : Animal[m
+[32m+[m[32m{[m
+[32m+[m[32m    public string Name;[m
+[32m+[m
+[32m+[m[32m    public Dog(string name)[m
+[32m+[m[32m    {[m
+[32m+[m[32m        Name = name;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    public override void Speak()[m
+[32m+[m[32m    {[m
+[32m+[m[32m        Console.WriteLine(Name + " is Barking");[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32msealed class Logger[m
+[32m+[m[32m{[m
+[32m+[m[32m    public void Log(string message)[m
+[32m+[m[32m    {[m
+[32m+[m[32m        Console.WriteLine("LOG : " + message);[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mclass Student[m
+[32m+[m[32m{[m
+[32m+[m[32m    public string Name;[m
+[32m+[m[32m    private int age;[m
+[32m+[m
+[32m+[m[32m    public Student(string name, int age)[m
+[32m+[m[32m    {[m
+[32m+[m[32m        Name = name;[m
+[32m+[m[32m        this.age = age;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    public void Display()[m
+[32m+[m[32m    {[m
+[32m+[m[32m        Console.WriteLine("Student Name : " + Name);[m
+[32m+[m[32m        Console.WriteLine("Age : " + age);[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mclass Program[m
+[32m+[m[32m{[m
+[32m+[m[32m    static void Main()[m
+[32m+[m[32m    {[m
+[32m+[m[32m        Console.WriteLine("===== CLASS AND OBJECT =====");[m
+[32m+[m
+[32m+[m[32m        Student s1 = new Student("Krishna", 19);[m
+[32m+[m
+[32m+[m[32m        s1.Display();[m
+[32m+[m
+[32m+[m[32m        Console.WriteLine("\n===== INHERITANCE =====");[m
+[32m+[m
+[32m+[m[32m        Dog d1 = new Dog("Tommy");[m
+[32m+[m
+[32m+[m[32m        d1.Speak();[m
+[32m+[m[32m        d1.Eat();[m
+[32m+[m
+[32m+[m[32m        Console.WriteLine("\n===== POLYMORPHISM =====");[m
+[32m+[m
+[32m+[m[32m        Animal a1 = new Dog("Rocky");[m
+[32m+[m
+[32m+[m[32m        a1.Speak();[m
+[32m+[m[32m        a1.Eat();[m
+[32m+[m
+[32m+[m[32m        Console.WriteLine("\n===== SEALED CLASS =====");[m
+[32m+[m
+[32m+[m[32m        Logger logger = new Logger();[m
+[32m+[m
+[32m+[m[32m        logger.Log("Application Started");[m
+[32m+[m
+[32m+[m[32m        Console.WriteLine("\nProgram Finished");[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m//                                    output[m
+[32m+[m
+[32m+[m
+[32m+[m[32m// ===== CLASS AND OBJECT =====[m
+[32m+[m
+[32m+[m[32m// Student Name : Krishna[m
+[32m+[m[32m// Age : 19[m
+[32m+[m
+[32m+[m[32m// ===== INHERITANCE =====[m
+[32m+[m
+[32m+[m[32m// Tommy is Barking[m
+[32m+[m[32m// Animal is Eating[m
+[32m+[m
+[32m+[m[32m// ===== POLYMORPHISM =====[m
+[32m+[m
+[32m+[m[32m// Rocky is Barking[m
+[32m+[m[32m// Animal is Eating[m
+[32m+[m
+[32m+[m[32m// ===== SEALED CLASS =====[m
+[32m+[m
+[32m+[m[32m// LOG : Application Started[m
+[32m+[m
+[32m+[m[32m// Program Finished[m
